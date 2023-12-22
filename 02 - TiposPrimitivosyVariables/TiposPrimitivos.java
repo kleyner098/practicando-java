@@ -19,6 +19,10 @@ class TiposPrimitivos {
             char caracter2 = 65;
             char caracter3 = '\u0061';
             System.out.println("Esto es un char: " + caracter + " y esto también " + caracter2 + " y esto " + caracter3); 
-            
+
+            /* Para visualizar los valores por defecto creamos una nueva clase */
+            ValoresPorDefecto vpf = new ValoresPorDefecto();
+            vpf.imprimirValoresIniciales();
+         
         }
     }
