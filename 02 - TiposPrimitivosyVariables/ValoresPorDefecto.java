@@ -1,7 +1,6 @@
 
 /*  Cómo saber los valores por defecto de los tipos primitivos de datos en Java
- *  Metemos los tipos en una clase y realizamos la impresión por pantalla
- */
+ *  Metemos los tipos en una clase y realizamos la impresión por pantalla */
 
 class ValoresPorDefecto {
 
