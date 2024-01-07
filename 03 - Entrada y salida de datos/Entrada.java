@@ -17,5 +17,9 @@ public class Entrada {
         System.out.println(message);
         // Cerramos el recurso
         scanner.close();
+
+        // Ejemplo simple de declaración de variable y concatenación de cadenas
+        String holaMundo = "¡Hola Mundo!";
+        System.out.println(holaMundo + " Bienvenidos a Java");
     }
 }

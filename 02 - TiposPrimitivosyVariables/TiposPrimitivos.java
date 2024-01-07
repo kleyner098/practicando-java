@@ -24,7 +24,6 @@ class TiposPrimitivos {
 
             /* Una variable booleana solamente puede guardar uno de los dos 
             posibles valores: true (verdadero) y false (falso). */
-
             boolean verdadero = true; 
             System.out.println("Esto es un boolean " + verdadero);
            
@@ -49,6 +48,8 @@ class TiposPrimitivos {
             double d = Double.MAX_VALUE;
             double o = d + 1; // Los números en coma flotante se desbordan devolviendo el valor máximo
             System.out.println("Valor maximo double: " + d + " Operación desbordada " + o);  // La variable 'o' será el valor máximo
+
+           
 
         }
     }
