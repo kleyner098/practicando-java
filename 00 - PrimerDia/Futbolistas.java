@@ -7,7 +7,7 @@ class Futbolistas {
         System.out.println(jugador[5]);
         
 
-        /*for (int i=0;i<jugador.length;i++){
+        for (int i=0;i<jugador.length;i++){
             switch (jugador[i]) {
                 case "delantero":
                     System.out.println("El delantero chuta");
@@ -26,7 +26,7 @@ class Futbolistas {
                     System.out.println("Hola, entrenador");
                     break;
             }
-        }*/
+        }
 
     }
 
