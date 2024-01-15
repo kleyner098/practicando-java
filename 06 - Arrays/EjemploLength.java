@@ -1,3 +1,5 @@
+/* Ejemplo para mostrar el uso de la longitud de un array */
+
 public class EjemploLength {
     public static void main (String [] args) {
             
