@@ -1,4 +1,4 @@
-public class EjemploMetodos {
+public class EjemploFunciones {
     public static void main (String [] args) {
             
         funcionEntero();
