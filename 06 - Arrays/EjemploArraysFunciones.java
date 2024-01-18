@@ -1,4 +1,4 @@
-public class EjemploArraysMetodos {
+public class EjemploArraysFunciones {
     public static void main (String [] args) { 
         int mayor, menor, suma; 
         int [ ] nums = {3,4,8,2}; 

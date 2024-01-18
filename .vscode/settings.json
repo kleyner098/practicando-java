@@ -1,7 +1,7 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
-        "12 - ConexionMySQL",
+        "07 - POO",
         "06 - Arrays",
         "05 - Secuencias de control",
         "04 - Operaciones Aritmeticas",
@@ -9,10 +9,7 @@
         "02 - TiposPrimitivosyVariables",
         "01 - HolaMundo",
         "00 - PrimerDia",
-        "07 - ConexionMySQL"
+        "08 - Carrera de Caracoles"
     ],
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "07 - ConexionMySQL/lib/mysql-connector-j-8.1.0.jar"
-    ]
+
 }
