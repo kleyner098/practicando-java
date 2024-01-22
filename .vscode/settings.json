@@ -1,6 +1,7 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
+        "08 - POO Sobrecarga",
         "07 - POO",
         "06 - Arrays",
         "05 - Secuencias de control",
@@ -9,7 +10,7 @@
         "02 - TiposPrimitivosyVariables",
         "01 - HolaMundo",
         "00 - PrimerDia",
-        "08 - Carrera de Caracoles"
+        "09 - Variables de Referencia"
     ],
 
 }
