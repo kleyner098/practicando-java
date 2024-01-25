@@ -5,9 +5,14 @@ public class Persona {
     private int edad;
 
     /* Método constructor */
-    public Persona(String nombreInicial) {
-        this.edad = 0;
-        this.nombre = nombreInicial;
+    public Persona(String nombre) {
+       this(nombre,0); // Llamamos al segundo constructor con edad 0 
+    }
+
+    /* Constructor alternativo */
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
     /* Métodos */
@@ -21,6 +26,10 @@ public class Persona {
         this.edad = this.edad + 1;
     }
 
+    /* Sobrecarga de métodos */
+    public void crecer(int years) {
+        this.edad = this.edad + years;
+    }
 
     /* Método devolver un entero */
     public int devolverEdad() {
@@ -47,7 +56,7 @@ public class Persona {
 
     /* Ejemplo de toString */
     public String toString() {
-        return this.nombre + ", edad " + this.edad + " años";
+        return this.nombre + ", edad " + this.edad + " years";
     }
 
 }

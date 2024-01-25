@@ -1,6 +1,8 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
+        "09 - Variables de Referencia",
+        "08 - POO Sobrecarga",
         "07 - POO",
         "06 - Arrays",
         "05 - Secuencias de control",
@@ -9,7 +11,11 @@
         "02 - TiposPrimitivosyVariables",
         "01 - HolaMundo",
         "00 - PrimerDia",
-        "08 - Carrera de Caracoles"
+        "10 - ConexionMySQL"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "10 - ConexionMySQL/lib/mysql-connector-j-8.1.0.jar"
     ],
 
 }

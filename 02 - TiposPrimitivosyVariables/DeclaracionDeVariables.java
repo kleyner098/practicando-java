@@ -15,10 +15,10 @@ public class DeclaracionDeVariables {
         System.out.println(valor);
 
         boolean asignacionEnterosFuncionara = false;
-        asignacionEnterosFuncionara = 42; // No funciona
+        //asignacionEnterosFuncionara = 42; // No funciona
 
         int entero = 10;
-        asignacionEnterosFuncionara = entero; // Tampoco lo hace esto
+        //asignacionEnterosFuncionara = entero; // Tampoco lo hace esto
 
         double a = 3.14;
         double b = 22.0;
@@ -38,7 +38,7 @@ public class DeclaracionDeVariables {
         final double DIAS_SEMANA;
         DIAS_SEMANA = 7;
         System.out.println(DIAS_SEMANA);
-        DIAS_SEMANA = 10.4; // Da error lo vemos marcado en rojo por el programa
+        //DIAS_SEMANA = 10.4; // Da error lo vemos marcado en rojo por el programa
      
         }
 }
