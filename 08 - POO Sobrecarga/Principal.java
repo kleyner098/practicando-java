@@ -6,9 +6,13 @@ public class Principal { // CamelCase
         
         Persona paco = new Persona("Paco");
         Persona pedro = new Persona("Pedro",16);
+        Persona maria = new Persona("María",16);
 
         paco.presentarse();
         pedro.presentarse();
+
+        // Ejemplo invocación método estático
+        System.out.println (Persona.getContadorPersonas ()); // imprime 2
          
     }
 }

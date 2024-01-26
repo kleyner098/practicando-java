@@ -3,6 +3,7 @@ public class Persona {
     /* Variables de instancia o Atributos de objeto */
     private String nombre;
     private int edad;
+    private static int contadorPersonas; // atributo estático
 
     /* Método constructor */
     public Persona(String nombre) {
@@ -13,6 +14,7 @@ public class Persona {
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
+        contadorPersonas++; // Incrementamos el atributo estático
     }
 
     /* Métodos */
@@ -58,5 +60,10 @@ public class Persona {
     public String toString() {
         return this.nombre + ", edad " + this.edad + " years";
     }
+
+    /* Método estático */
+    public static int getContadorPersonas () {
+        return contadorPersonas; // se puede acceder sin crear una persona
+      }
 
 }

@@ -6,6 +6,7 @@ public class PrincipalVariablesDeReferencia {
         // Variable de referencia
         Nombre darth = new Nombre("Darth Vader");
         System.out.println(darth);
+
        
 
     }
