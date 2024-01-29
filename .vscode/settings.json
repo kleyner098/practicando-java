@@ -1,6 +1,7 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
+        "10 - ConexionMySQL",
         "09 - Variables de Referencia",
         "08 - POO Sobrecarga",
         "07 - POO",
@@ -11,11 +12,18 @@
         "02 - TiposPrimitivosyVariables",
         "01 - HolaMundo",
         "00 - PrimerDia",
-        "10 - ConexionMySQL"
+        "11 - Cadenas"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "10 - ConexionMySQL/lib/mysql-connector-j-8.1.0.jar"
+    ],
+    "java.completion.filteredTypes": [
+        "com.sun.*",
+        "sun.*",
+        "jdk.*",
+        "org.graalvm.*",
+        "io.micrometer.shaded.*"
     ],
 
 }
