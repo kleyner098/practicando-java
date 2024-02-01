@@ -1,6 +1,5 @@
-public class SeleccionFutbol {
+public class SeleccionFutbol { // Superclase
     
-
 	protected int id;
 	protected String Nombre;
 	protected String Apellidos;
