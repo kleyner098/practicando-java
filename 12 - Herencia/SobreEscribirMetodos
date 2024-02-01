@@ -1,0 +1,14 @@
+// Clase padre
+public class Animal {
+    public void hacerSonido() {
+        System.out.println("El animal hace un sonido");
+    }
+}
+
+// Clase hija
+public class Perro extends Animal {
+    @Override // Anotación opcional que indica que se está sobrescribiendo un método
+    public void hacerSonido() {
+        System.out.println("El perro ladra");
+    }
+}

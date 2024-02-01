@@ -12,7 +12,7 @@
         "02 - TiposPrimitivosyVariables",
         "01 - HolaMundo",
         "00 - PrimerDia",
-        "11 - Cadenas"
+        "12 - Herencia"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
