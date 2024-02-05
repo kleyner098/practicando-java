@@ -24,6 +24,38 @@ public class SeleccionFutbol { // Superclase
 	public void viajar() {
 		System.out.println("Estoy ocupado viajando");
 	}
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String nombre) {
+        Nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return Apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        Apellidos = apellidos;
+    }
+
+    public int getEdad() {
+        return Edad;
+    }
+
+    public void setEdad(int edad) {
+        Edad = edad;
+    }
 	
 }
     
