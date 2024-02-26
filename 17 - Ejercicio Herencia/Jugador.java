@@ -7,12 +7,12 @@ public class Jugador {
     protected int reflejos;
     protected int velocidad;
     
-    protected int atributoPropioAtaque;  // Estos atributos cambian
+    protected int atributoPropioAtaque;  // Estos atributos cambian según el tipo de jugador
     protected int atributoPropioDefensa;
     protected double probabilidadAtaque;
     protected double probabilidadDefensa;
 
-    protected String tipo = "Jugador de Campo"; /* prueba.Jugador de Campo por defecto o prueba.Portero */
+    protected String tipo = "Jugador de Campo"; /* Jugador de Campo por defecto o Portero */
 
     public Jugador(int agilidad,int fisico, int reflejos, int velocidad){
         this.agilidad = agilidad;
@@ -37,7 +37,8 @@ public class Jugador {
 class Portero extends Jugador {
 
     public Portero (int agilidad,int fisico, int reflejos, int velocidad){
-        super(agilidad,fisico,reflejos,velocidad);
+        super(agilidad,fisico,reflejos,velocidad); // Atributos comunes
+        // Atributos propios de Portero
         atributoPropioAtaque = fisico;
         atributoPropioDefensa = reflejos;
         probabilidadAtaque = 0.05;
