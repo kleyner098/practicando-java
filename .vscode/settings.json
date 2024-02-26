@@ -1,6 +1,9 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
+        "16 - Archivos",
+        "15 - Excepciones",
+        "13 - Interfaces",
         "12 - Herencia",
         "10 - ConexionMySQL",
         "09 - Variables de Referencia",
@@ -13,7 +16,7 @@
         "02 - TiposPrimitivosyVariables",
         "01 - HolaMundo",
         "00 - PrimerDia",
-        "13 - Interfaces"
+        "17 - Ejercicio Herencia"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
