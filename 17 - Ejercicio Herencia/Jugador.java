@@ -12,7 +12,7 @@ public class Jugador {
     protected double probabilidadAtaque;
     protected double probabilidadDefensa;
 
-    protected String tipo = "prueba.Jugador de Campo"; /* prueba.Jugador de Campo por defecto o prueba.Portero */
+    protected String tipo = "Jugador de Campo"; /* prueba.Jugador de Campo por defecto o prueba.Portero */
 
     public Jugador(int agilidad,int fisico, int reflejos, int velocidad){
         this.agilidad = agilidad;
