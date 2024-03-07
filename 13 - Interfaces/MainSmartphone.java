@@ -40,7 +40,6 @@ interface ReproductorMusica extends Radio {
         System.out.println("Nuevo mensaje de " + patrocinador);
       }
       
-
 }
 
 // Implementando varios interfaces en nuestra clase
