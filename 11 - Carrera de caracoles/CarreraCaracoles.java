@@ -13,6 +13,7 @@ public class CarreraCaracoles {
         while (ganador == 0) { // Repetimos el bucle hasta que tengamos un ganador
             for (Caracol caracol : carreraCaracoles) {
                 ganador = caracol.incrementarRecorrido();
+                //caracol.progreso();
                 System.out.println(caracol.toString());
                 if (ganador != 0) break;
             }
