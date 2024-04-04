@@ -1,0 +1,214 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Jugador",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1085397476 { 
+   	label=Defensa
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Defensa1085397476[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Defensa</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1272524065 { 
+   	label=Portero
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Portero1272524065[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Portero</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1525653958 { 
+   	label=Delantero
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Delantero1525653958[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Delantero</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2083359327 { 
+   	label=Equipo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Equipo2083359327[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Equipo</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   equipo: Jugador[] [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getJugador(index: int): Jugador</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_403518370 { 
+   	label=Jugador
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Jugador403518370[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Jugador</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   agilidad: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   atributoPropioAtaque: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   atributoPropioDefensa: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   fisico: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   probabilidadAtaque: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   probabilidadDefensa: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   reflejos: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tipo: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   velocidad: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ atacar(): double</TD></TR>
+<TR><TD ALIGN="LEFT" >+ defender(): double</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_74219474 { 
+   	label=Medio
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Medio74219474[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Medio</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Equipo2083359327 -> Jugador403518370[label="equipo
+[0..*]"];
+Jugador403518370 -> Defensa1085397476[arrowhead=none, arrowtail=empty, dir=both];
+Jugador403518370 -> Delantero1525653958[arrowhead=none, arrowtail=empty, dir=both];
+Jugador403518370 -> Medio74219474[arrowhead=none, arrowtail=empty, dir=both];
+Jugador403518370 -> Portero1272524065[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml

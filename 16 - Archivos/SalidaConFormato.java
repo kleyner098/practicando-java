@@ -9,7 +9,7 @@ public class SalidaConFormato {
         Calendar c = Calendar.getInstance(); 
     
         System.out.printf("%1$tH:%1$tM:%1$tS---%1$td de %1$tB"+ " de %1$ty", c);
-
+        System.out.printf("%1$td/%1$tb/%1$ty: %1$tH:%1$tM:%1$tS", c);
         System.out.println("\n"+ c);
 
     }

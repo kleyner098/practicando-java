@@ -1,6 +1,8 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
+        "18 - Archivos Escritura",
+        "17 - Ejercicio Herencia",
         "16 - Archivos",
         "15 - Excepciones",
         "13 - Interfaces",
@@ -16,7 +18,7 @@
         "02 - TiposPrimitivosyVariables",
         "01 - HolaMundo",
         "00 - PrimerDia",
-        "17 - Ejercicio Herencia"
+        "19 - Serializacion"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
